@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // Huỳnh Vỹ Hào _20075371
+    <script>
+
+        // Data 1
+        var dolphinsScores1 = [96, 108, 89];
+        var koalasScores1 = [88, 91, 110];
+
+        // Data Bonus 1
+        var dolphinsScoresBonus1 = [97, 112, 101];
+        var koalasScoresBonus1 = [109, 95, 123];
+
+        // Data Bonus 2
+        var dolphinsScoresBonus2 = [97, 112, 101];
+        var koalasScoresBonus2 = [109, 95, 106];
+
+        // Tính điểm số trung bình
+        function tinhDiemTrungBinh(diem) {
+            var tongDiem = diem.reduce((tong, diem) => tong + diem, 0);
+            return tongDiem / diem.length;
+        }
+        // Tính điểm số trung bình cho đội Dolphins và đội Koalas
+        var dolphinsAverageScore = tinhDiemTrungBinh(dolphinsScores1);
+        var koalasAverageScore = tinhDiemTrungBinh(koalasScores1);
+
+        console.log("Điểm tb  Data 1 của Dolphins và Koalas", dolphinsAverageScore, koalasAverageScore);
+
+        // So sánh điểm số trung bình và xác định người chiến thắng hoặc hòa
+        if (dolphinsAverageScore > koalasAverageScore) {
+            console.log("Đội Dolphins giành chiến thắng với điểm số trung bình cao hơn.");
+        } else if (koalasAverageScore > dolphinsAverageScore) {
+            console.log("Đội Koalas giành chiến thắng với điểm số trung bình cao hơn.");
+        } else {
+            console.log("Hòa, cả hai đội có cùng điểm số trung bình.");
+        }
+
+    </script>
+</body>
+
+</html>
