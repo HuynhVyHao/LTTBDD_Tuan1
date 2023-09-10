@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // Huỳnh Vỹ Hào _20075371
+    <script>
+        function printForecast(arr) {
+            let forecast = '';
+            for (let i = 0; i < arr.length; i++) {
+                forecast += `...${arr[i]}°C trong ${i + 1} ngày `;
+            }
+            console.log(forecast);
+        }
+
+        
+        var data1 = [17, 21, 23];
+        console.log("Dữ liệu kiểm tra Data 1:");
+        printForecast(data1);
+
+       
+        var data2 = [12, 5, -5, 0, 4];
+        console.log("\nDữ liệu kiểm tra Data 2:");
+        printForecast(data2);
+
+    </script>
+</body>
+
+</html>

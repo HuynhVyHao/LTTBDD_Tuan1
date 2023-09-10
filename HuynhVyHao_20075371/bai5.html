@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // Huỳnh Vỹ Hào _20075371
+    <script>
+        // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+        // § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+
+        //tính điểm trung bình
+        var calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+        //data1
+        var dtbDolphins = calcAverage(44, 23, 71);
+        var dtbKoalas = calcAverage(65, 54, 49);
+        //data2
+        var dtbDolphins2 = calcAverage(85, 54, 41);
+        var dtbKoalas2 = calcAverage(23, 34, 27);
+
+
+        console.log("Điểm trung bình của Dolphins và Kolas là :", dtbDolphins, dtbKoalas);
+
+
+        var checkWinner = (dtbDolphins, dtbKoalas) => {
+            if (dtbDolphins >= 2 * dtbKoalas) {
+                console.log(`Dolphins thắng (${dtbDolphins} so với ${dtbKoalas})`);
+            } else if (dtbKoalas >= 2 * dtbDolphins) {
+                console.log(`Koalas thắng (${dtbKoalas} so với ${dtbDolphins})`);
+            } else {
+                console.log("Không có đội nào thắng!");
+            }
+        };
+        console.log("Data1");
+        checkWinner(dtbDolphins, dtbKoalas);
+
+        // console.log("Data2");
+        // checkWinner(dtbDolphins2, dtbKoalas2);
+
+
+
+    </script>
+</body>
+
+</html>
